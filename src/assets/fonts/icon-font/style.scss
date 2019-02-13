@@ -1,0 +1,104 @@
+@import "variables";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$icomoon-font-path}/icomoon.eot?6dkwgd');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?6dkwgd#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?6dkwgd') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?6dkwgd') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?6dkwgd#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-print {
+  &:before {
+    content: $icon-print;
+  }
+}
+.icon-arrow-down {
+  &:before {
+    content: $icon-arrow-down;
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram;
+  }
+}
+.icon-googleplus {
+  &:before {
+    content: $icon-googleplus;
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+.icon-circle-check {
+  &:before {
+    content: $icon-circle-check;
+  }
+}
+.icon-bullseye {
+  &:before {
+    content: $icon-bullseye;
+  }
+}
+.icon-coctel {
+  &:before {
+    content: $icon-coctel;
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close;
+  }
+}
+.icon-menu {
+  &:before {
+    content: $icon-menu;
+  }
+}
+.icon-beer-bottle {
+  &:before {
+    content: $icon-beer-bottle;
+  }
+}
+.icon-mug {
+  &:before {
+    content: $icon-mug;
+  }
+}
+.icon-beer {
+  &:before {
+    content: $icon-beer;
+  }
+}
+.icon-sandwich {
+  &:before {
+    content: $icon-sandwich;
+  }
+}
+

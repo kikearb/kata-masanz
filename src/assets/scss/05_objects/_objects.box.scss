@@ -1,0 +1,9 @@
+.box {
+    @include vertical-padding(spacing(base));
+    @include horizontal-padding(spacing(base));
+    display: inline-block;
+}
+
+.box--rounded {
+    border-radius: 100%;
+}

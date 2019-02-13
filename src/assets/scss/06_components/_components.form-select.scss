@@ -1,0 +1,53 @@
+@import '../01_settings/index';
+@import '../02_tools/index';
+
+.form-select {
+  @include reset-select($control-height);
+
+  position: relative;
+  display: inline-block;
+  height: $control-height;
+  max-width: 100%;
+  vertical-align: top;
+
+  @include icon-font-before($icon-arrow-down) {
+    position: absolute;
+    right: 0.5rem;
+    @include center(y);
+    font-size: 1em;
+    z-index: 4;
+  }
+
+  > select {
+    @include control;
+    border-radius: 3px;
+    border-bottom: $dark-text-color;
+    background-color: $content-bg-color;
+    font-size: $font-size-base;
+    @include media($desktop) {
+        font-size: $font-size-large;
+    }
+
+    padding-right: 1.7rem;
+    min-width: 4rem;
+
+    &:required:invalid {
+      color: $coffee;
+    }
+
+    // Oculta la opción que hace de placeholder
+    option[value=''][disabled] { /* stylelint-disable-line */
+      display: none;
+    }
+  }
+}
+
+.form-select--full-width {
+  width: 100%;
+}
+
+// .has-error .form-select {
+//   > select {
+//     border-bottom: 1px solid $has-error;
+//   }
+// }

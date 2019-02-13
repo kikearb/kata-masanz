@@ -1,0 +1,23 @@
+// Añade padding vertical
+@mixin vertical-padding($padding) {
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+
+// Añade padding horizontal
+@mixin horizontal-padding($padding) {
+    padding-left: $padding;
+    padding-right: $padding;
+}
+
+// Añade margen vertical
+@mixin vertical-margin($margin) {
+    margin-top: $margin;
+    margin-bottom: $margin;
+}
+
+// Añade margen horizontal
+@mixin horizontal-margin($margin) {
+    margin-left: $margin;
+    margin-right: $margin;
+}

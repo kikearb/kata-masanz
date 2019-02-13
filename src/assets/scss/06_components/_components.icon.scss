@@ -1,0 +1,37 @@
+@import '01_settings/index';
+@import '02_tools/index';
+@import '../../fonts/icon-font/variables';
+
+$icons: (
+    beer: $icon-beer,
+    beer-bottle: $icon-beer-bottle,
+    bullseye: $icon-bullseye,
+    circle-check: $icon-circle-check,
+    close: $icon-close,
+    coctel: $icon-coctel,
+    facebook: $icon-facebook,
+    googleplus: $icon-googleplus,
+    instagram: $icon-instagram,
+    menu: $icon-menu,
+    mug: $icon-mug,
+    print: $icon-print,
+    sandwich: $icon-sandwich,
+    twitter: $icon-twitter,
+);
+
+    .icon,
+    [data-ico]::after {
+    @include icon-font-base;
+    }
+
+    // Estilos de iconos disponibles en HTML
+    @each $iconName, $iconContent in $icons {
+    .icon--#{$iconName}::before,
+    [data-icon~='#{$iconName}']::after {
+        content: $iconContent;
+    }
+}
+
+.icon--print {
+    cursor: pointer;
+}

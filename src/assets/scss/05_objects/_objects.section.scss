@@ -1,0 +1,19 @@
+.o-section {
+    @include vertical-padding(spacing(base));
+
+    @include media($only-mobile) {
+        @include horizontal-padding(spacing(base));
+    }
+}
+
+.o-section--small {
+    @include vertical-padding(spacing(small));
+}
+
+.o-section--medium {
+    @include vertical-padding(spacing(medium));
+}
+
+.o-section--large {
+    @include vertical-padding(spacing(large));
+}

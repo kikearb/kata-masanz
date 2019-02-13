@@ -1,0 +1,16 @@
+.contact-data {
+    display: flex;
+
+    @include media($only-mobile) {
+        display: block;
+    }
+}
+
+.contact-data__item {
+    flex: 1;
+}
+
+.contact-data__map {
+    width: 100%;
+    height: 100%;
+}

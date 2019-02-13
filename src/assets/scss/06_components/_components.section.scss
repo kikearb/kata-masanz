@@ -1,0 +1,75 @@
+.section {
+  @include horizontal-padding(spacing(small));
+  background-color: $marron;
+
+  &:first-of-type {
+    @include media($only-mobile) {
+      margin-top: 88px;
+    }
+  }
+}
+
+.section--secondary {
+  background-color: $dark-text-color;
+}
+
+.section--bar {
+  background: url("../images/bar.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $light-text-color;
+  height: 300px;
+}
+
+.section--coctel {
+  background: url("../images/cocktails.jpg") no-repeat bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $light-text-color;
+  height: 300px;
+}
+
+.section--beers {
+  background: url("../images/beers.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $light-text-color;
+  height: 300px;
+}
+
+.section--coffee {
+  background: #000 url("../images/coffe.jpg") no-repeat right;
+  background-size: initial;
+  background-attachment: fixed;
+  color: $light-text-color;
+  background-position-x: 50vw;
+  background-position-y: -150px;
+  height: 300px;
+
+  @include media($only-mobile) {
+    background-position-x: -200px;
+    background-position-y: -80px;
+  }
+}
+
+.section--tapas {
+  background: #000 url("../images/tapas.jpg") no-repeat right;
+  background-size: initial;
+  background-attachment: fixed;
+  color: $light-text-color;
+  background-position-x: 50vw;
+  background-position-y: 60px;
+  height: 300px;
+
+  @include media($only-mobile) {
+    background-position-x: -100px;
+  }
+}
+
+.section--apertura {
+  background: url("../images/apertura.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $light-text-color;
+  height: 300px;
+}

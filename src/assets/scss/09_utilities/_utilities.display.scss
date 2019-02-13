@@ -1,0 +1,25 @@
+.u-only-mobile {
+    @include media($tablet) {
+        display: none;
+    }
+}
+
+.u-only-up-tablet {
+    @include media($only-mobile) {
+        display: none;
+    }
+}
+
+.u-only-down-desktop {
+    @include media($desktop-large) {
+        display: none;
+    }
+}
+
+.u-none {
+    display: none;
+}
+
+.u-full-width {
+    width: 100%;
+}

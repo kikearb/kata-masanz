@@ -1,0 +1,79 @@
+@import '01_settings/index';
+@import '02_tools/index';
+
+.main-menu {
+    width: 100%;
+    background-color: $marron;
+    z-index: 10;
+
+    @include media ($only-mobile) {
+        position: fixed;
+        top: 89px;
+        left: 100%;
+        height: 100vh;
+        transition: all 0.3s;
+        
+        &.is-visible {
+            top: 89px;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+    }
+}
+
+.menu-opened {
+    overflow-y: hidden;
+}
+
+.main-menu-container {
+    display: flex;
+    @include media($only-mobile) {
+        border: 0;
+        padding-top: 0;
+        flex-direction: column;
+    }
+}
+
+.main-menu__item {
+    max-width: 25%;
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    @include media($only-mobile) {
+        max-width: 100%;
+        border-bottom: solid 1px $coffee;
+    }
+}
+
+.main-menu__item-link {
+    text-decoration: none;
+    color: $dark-text-color;
+    display: inline-flex;
+    align-items: center;
+    @include vertical-padding(10px);
+    @include horizontal-padding(10px);
+    font-weight: bold;
+
+    @include media($only-mobile) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include vertical-padding(20px);
+    }
+}
+
+    .main-menu__item-link:hover .main-menu__item-link-text {
+        text-decoration: none;
+    }
+
+    .main-menu__item-link-text {
+        text-transform: uppercase;
+
+        @include media($only-mobile) {
+            margin-left: spacing(small);
+        }
+    }

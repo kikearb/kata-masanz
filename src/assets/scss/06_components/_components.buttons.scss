@@ -1,0 +1,101 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    height: spacing(medium);
+    @include horizontal-padding(spacing(base));
+    @include vertical-padding(0);
+
+    vertical-align: middle;
+    color: inherit;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s;
+    background-color: $light-text-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $dark-text-color;
+    }
+}
+
+.button--secondary {
+    background: transparent;
+    color: $dark-text-color;
+    border: solid 1px $dark-text-color;
+}
+
+.button--secondary:hover {
+    color: $marron;
+    background-color: $dark-text-color;
+    border: solid 1px $marron;
+}
+
+.button--negative {
+    background: transparent;
+    color: $light-text-color;
+    border: solid 1px $light-text-color;
+}
+
+.button--negative:hover {
+    background: $light-text-color;
+    color: $dark-text-color;
+    border: solid 1px $light-text-color;
+}
+
+.button--coctel {
+    background-color: transparent;
+    color: $dark-text-color;
+    border: solid 1px $dark-text-color;
+
+    &:hover {
+       color: $light-text-color;
+       background-color: $coctel;
+    }
+}
+
+.button--coctel-negative {
+    background: transparent;
+    color: $light-text-color;
+    border: solid 1px $light-text-color;
+    
+    &:hover {
+        background-color: $coctel;
+        color: $light-text-color;
+        border: solid 1px $light-text-color;
+    }
+}
+
+.button--beer {
+    background-color: transparent;
+    color: $dark-text-color;
+    border: solid 1px $dark-text-color;
+
+    &:hover {
+       color: $light-text-color;
+       background-color: $beer;
+    }
+}
+
+.button--coffee {
+    background-color: transparent;
+    color: $dark-text-color;
+    border: solid 1px $dark-text-color;
+
+    &:hover {
+       color: $light-text-color;
+       background-color: $coffee;
+    }
+}
+
+.button--tapas {
+    background-color: transparent;
+    color: $dark-text-color;
+    border: solid 1px $dark-text-color;
+
+    &:hover {
+       color: $light-text-color;
+       background-color: $verde;
+    }
+}

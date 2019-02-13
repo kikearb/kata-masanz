@@ -1,0 +1,81 @@
+@each $size in map-keys($spacing) {
+    $directions: ('-top', '-right', '-bottom', '-left');
+
+    @if $size == 'base' {
+        @each $direction in $directions {
+            .u-margin#{$direction} {
+                margin#{$direction}: map-get($spacing, $size) !important;
+            }
+
+            .u-undo-margin#{$direction} {
+                margin#{$direction}: - map-get($spacing, $size) !important;
+            }
+        }
+    } @else {
+        @each $direction in $directions {
+            .u-margin#{$direction}-#{$size} {
+                margin#{$direction}: map-get($spacing, $size) !important;
+            }
+
+            .u-undo-margin#{$direction}-#{$size} {
+                margin#{$direction}: - map-get($spacing, $size) !important;
+            }
+        }
+    }
+}
+
+.u-margin-none {
+    margin: 0 !important;
+}
+
+.u-margin-top-none {
+    margin-top: 0 !important;
+}
+
+.u-margin-bottom-none {
+    margin-bottom: 0 !important;
+}
+
+.u-margin-bottom\@md {
+    @include media($tablet) {
+        margin-bottom: spacing(base);
+    }
+}
+
+.u-margin-bottom-small\@md {
+    @include media($tablet) {
+        margin-bottom: spacing(small);
+    }
+}
+
+.u-margin-bottom-small\@only-mobile {
+    @include media($only-mobile) {
+        margin-bottom: spacing(small);
+    }
+}
+
+.u-margin-bottom\@only-mobile {
+    @include media($only-mobile) {
+        margin-bottom: spacing(base);
+    }
+}
+
+.u-margin-right\@only-mobile {
+    @include media($only-mobile) {
+        margin-right: spacing(base);
+    }
+}
+
+.u-padding-top-none {
+    padding-top: 0 !important;
+}
+
+.u-padding-top-none\@screen {
+    @media screen {
+        padding-top: 0 !important;
+    }
+}
+
+.u-padding-bottom-none {
+    padding-bottom: 0 !important;
+}

@@ -1,0 +1,9 @@
+.product-box {
+    @include horizontal-padding(spacing(small));
+    text-align: center;
+    flex-grow: 1;
+
+    @include media($tablet) {
+        max-width: 25%;
+    }
+}

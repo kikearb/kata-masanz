@@ -1,0 +1,11 @@
+.separator {
+    @include vertical-margin(spacing(base));
+    width: 100%;
+    border-bottom: solid 1px $dark-text-color;
+}
+
+.separator--secondary {
+    width: 100px;
+    border-bottom-width: 10px;
+    @include horizontal-margin(auto);
+}

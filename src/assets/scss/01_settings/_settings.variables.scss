@@ -1,0 +1,164 @@
+/*
+===============================
+===       BREAKPOINTS       ===
+===============================
+*/
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+  );
+  
+  // breakpoints para typi
+  $breakpoints: (
+    xs: map-get($grid-breakpoints, xs),
+    sm: map-get($grid-breakpoints, sm),
+    md: map-get($grid-breakpoints, md),
+    lg: map-get($grid-breakpoints, lg),
+    xl: map-get($grid-breakpoints, xl),
+    xxl: map-get($grid-breakpoints, xxl)
+  );
+  
+  // breakpoint aliases
+  $mobile-large: '>=sm';
+  $tablet: '>=md';
+  $desktop: '>=lg';
+  $desktop-large: '>=xl';
+  $desktop-xlarge: '>=xxl';
+  $only-mobile-small: '<sm';
+  $only-mobile: '<md';
+  $only-mobile-tablet: '<lg';
+  $only-down-desktop: '<xl';
+
+/*
+===============================
+===    PALETA DE COLORES    ===
+===============================
+*/
+
+    //Gris
+    $gris: #e1e1e1;
+    $gris-claro: #eee;
+
+    //Marrón
+    $marron-peru: #cd853f;
+    $marron: #deb887;
+
+    //Verde
+    $verde: #187828;
+    $verde-claro: tint($verde, 20%);
+
+    //Azul
+    $azul: #220fec;
+    $azul-claro: tint($azul, 20%);
+    
+    //Footer
+    $footer-color: #000;
+    
+    $gold: #ebeb68;
+    $coctel: #49176d;
+    $beer: #d86000;
+    $coffee: #482400;
+
+    $page-bg-color: #d8d8d8;
+    $content-bg-color: #fff;
+
+    $light-text-color: #fff;
+    $dark-text-color: #000;
+
+    /*
+        Colores sacados de una foto de la mandarra
+    */
+    
+        $color1: #dad4b7;
+        $color2: #7a6342;
+        $color3: #bd9334;
+        $color4: #91978c;
+        $color5: #554eb4;
+        $color6: #c3a863;
+        $color7: #4d3823;
+        $color8: #575747;
+        $color9: #120f0e;
+        $color10: #37362b;
+        $color11: #312418;
+        $color13: #a5544a;
+        $color14: #1e1b3b;
+        $color15: #22241c;
+        $color16: #040507;
+
+/*
+===============================
+===      GROSOR FUENTES     ===
+===============================
+*/
+
+    $black-weight: 900;
+    $bold-weight: bold;
+
+/*
+===============================
+===         FUENTES         ===
+===============================
+*/
+
+    $icon-font-family: 'icon-font';
+    $font-family-base: 'roboto', Arial;
+    $title-font-family: 'metamorphous';
+
+    $control-height: rem(48px);
+
+/*
+===============================
+===      TAMAÑO FUENTES     ===
+===============================
+*/
+    $font-hero: 60px;
+    $font-h1: 48px;
+    $font-h2: 35px;
+    $font-h3: 24px;
+
+    $font-rivendell: 40px;
+    $font-large: 20px;
+    $font-base: 16px;
+    $font-small: 13px;
+    $font-xsmall: 11px;
+
+/*
+===============================
+===         MÁRGENES        ===
+===============================
+*/
+
+    $spacing: (
+        tiny: 6px,
+        small: 12px,
+        base: 24px,
+        medium: 36px,
+        large: 48px,
+        big: 72px
+    );
+
+/*
+===============================
+===         SUBTEMAS        ===
+===============================
+*/
+
+    $subthemes: (
+        coctels: (
+            color: $coctel,
+        ),
+        tapas: (
+            color: $verde,
+        ),
+        beers: (
+            color: $beer,
+        ),
+        coffeandmore: (
+            color: $coffee,
+        ),
+    );

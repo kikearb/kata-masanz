@@ -1,0 +1,13 @@
+.beer {
+    display: block;
+}
+
+.beer__title {
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: spacing(tiny);
+}
+
+.beer__description {
+    display: block;
+}

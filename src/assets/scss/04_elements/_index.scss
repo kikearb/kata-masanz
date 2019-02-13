@@ -1,0 +1,30 @@
+// Unclassed HTML elements (type selectors)
+
+html {
+    background-color: $page-bg-color;
+    -webkit-print-color-adjust: exact; /*stylelint-disable-line*/
+}
+
+body {
+    font-family: $font-family-base;
+    color: $dark-text-color;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-print-color-adjust: exact; /*stylelint-disable-line*/
+}
+
+a {
+    user-select: none !important;
+    box-shadow: none !important;
+    touch-action: manipulation !important;
+    -webkit-tap-highlight-color: transparent; /*stylelint-disable-line*/
+    -moz-appearance: none; /*stylelint-disable-line*/
+    -webkit-appearance: none; /*stylelint-disable-line*/
+}
+
+[class^='col-'] {
+    box-sizing: border-box;
+    // padding: 0 !important;
+    margin-bottom: spacing(small);
+}

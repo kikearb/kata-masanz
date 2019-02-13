@@ -1,0 +1,26 @@
+/// Configura un nuevo font-face
+@mixin add-font-face($family-name, $path, $font-weight, $font-style: normal) {
+    @font-face {
+        font-family: $family-name;
+        src:
+          url($path + '.woff') format('woff'),
+          url($path + '.ttf') format('truetype');
+        font-weight: $font-weight;
+        font-style: $font-style;
+    }
+}
+
+// Only display content to screen readers
+//
+// See: http://a11yproject.com/posts/how-to-hide-content
+// Credit: Bootstrap
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

@@ -1,0 +1,52 @@
+.social {
+    display: block;
+    padding: 15px;
+    border: solid 1px;
+    border-radius: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    color: $light-text-color;
+    font-size: $font-large;
+    position: relative;
+    margin-right: spacing(small);
+
+    &::before {
+        vertical-align: initial !important;
+    }
+}
+
+.social--twitter {
+    @include icon-font-before($icon-twitter);
+
+    &:hover {
+        background-color: #00aaec;
+        transition: all 0.3s;
+    }
+}
+
+.social--facebook {
+    @include icon-font-before($icon-facebook);
+    
+    &:hover {
+        background-color: #4460a0;
+        transition: all 0.3s;
+    }
+}
+
+.social--instagram {
+    @include icon-font-before($icon-instagram);
+    
+    &:hover {
+        background-color: #fbad50;
+        transition: all 0.3s;
+    }
+}
+
+.social--google {
+    @include icon-font-before($icon-googleplus);
+    
+    &:hover {
+        background-color: #f93f2d;
+        transition: all 0.3s;
+    }
+}

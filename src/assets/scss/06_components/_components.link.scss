@@ -1,0 +1,28 @@
+.link {
+    color: $dark-text-color;
+    text-decoration: none;
+    border-bottom: solid 2px $color2;
+    cursor: pointer;
+}
+
+.footer .link {
+    color: $light-text-color;
+    text-decoration: none;
+    border-bottom: solid 1px $gold;
+    display: inline-flex;
+
+    &:hover {
+        border: 0;
+        color: $gold;
+    }
+}
+
+.link--main {
+    border: 0;
+    text-decoration: none;
+    color: $dark-text-color;
+
+    &:hover {
+        color: inherit;
+    }
+}

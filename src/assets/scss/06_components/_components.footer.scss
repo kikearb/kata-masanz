@@ -1,0 +1,22 @@
+.footer {
+    background-color: $footer-color;
+    @include vertical-padding(spacing(medium));
+    @include horizontal-padding(spacing(base));
+    color: $light-text-color;
+}
+
+.footer-wrapper {
+    text-transform: uppercase;
+    
+    @include media($tablet) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: spacing(base);
+}

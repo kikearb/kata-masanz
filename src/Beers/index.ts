@@ -1,0 +1,1 @@
+export { Beers } from './Beers';

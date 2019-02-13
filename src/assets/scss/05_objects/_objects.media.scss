@@ -1,0 +1,32 @@
+.o-media {
+  display: flex;
+  align-content: flex-start;
+}
+
+    .o-media__object {
+      margin-right: spacing(base);
+      max-width: 100%;
+      flex-shrink: 0;
+
+      @include media($only-mobile) {
+        margin-bottom: spacing(small);
+        
+        .u-flex-wrap & {
+          margin-bottom: spacing(small);
+        }
+      }
+    }
+
+    .o-media__object img {
+      height: 250px;
+      border-radius: 4px;
+
+      @include media($only-mobile-tablet) {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .o-media__body {
+      flex-grow: 1;
+    }

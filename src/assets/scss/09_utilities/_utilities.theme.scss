@@ -1,0 +1,24 @@
+.u-theme-color {
+  @include theme-color;
+}
+
+.u-theme-background-color {
+  @include theme-background-color();
+}
+
+.u-theme-hovercolor {
+  @include media($tablet) {
+    &:hover {
+      @include theme-color;
+    }
+  }
+}
+
+.u-theme-hoverbackground-color {
+  @include media($only-mobile) {
+    &:hover {
+      @include theme-background-color();
+      color: #fff;
+    }
+  }
+}
